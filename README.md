@@ -29,7 +29,7 @@ python EECE.5811_HW0PT2.py
 ## Design of the Programs
 
 1. Producer–Consumer (EECE.5811_HW0PT1.py)
- ```bash```
+
  Producer:Generates numbers 1 through 5.
 Prints “Producer: X”.
 Sends each number to the Consumer via a queue.
@@ -42,10 +42,11 @@ main():
 Creates two queues (q_data and q_ack) for communication.
 Spawns Producer and Consumer processes with multiprocessing.Process.
 Waits for both to complete using .join().
-```bash```
-Stack (EECE.5811_HW0PT2.py)
-Stack Class:
-Internally uses an array of size 100 ([None]*100) with a top index.
+
+
+
+2. Stack (EECE.5811_HW0PT2.py)
+Stack Class: Internally uses an array of size 100 ([None]*100) with a top index.
 push(value): Increments top and stores value. Raises IndexError if top >= 99.
 pop(): Returns the value at top and decrements top. Raises IndexError if top < 0.
 stack_test():
