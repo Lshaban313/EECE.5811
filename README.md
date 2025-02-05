@@ -28,9 +28,9 @@ python EECE.5811_HW0PT2.py
 
 ## Design of the Programs
 
- Producer–Consumer (EECE.5811_HW0PT1.py)
- Producer:
-Generates numbers 1 through 5.
+1. Producer–Consumer (EECE.5811_HW0PT1.py)
+ ```bash```
+ Producer:Generates numbers 1 through 5.
 Prints “Producer: X”.
 Sends each number to the Consumer via a queue.
 Waits for an “ACK” after each send.
