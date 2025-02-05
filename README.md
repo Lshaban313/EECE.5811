@@ -57,7 +57,8 @@ Pops some values, printing each pop in a vertical format.
 
 
 ## Dependencies / Libraries
-Python 3.x (required)
-multiprocessing (comes with the standard Python library; no extra install needed)
-No additional external libraries are used beyond the standard Python library.
+```
+1. Python 3.x (required)
+2. multiprocessing (comes with the standard Python library; no extra install needed)
+3. No additional external libraries are used beyond the standard Python library.
 
