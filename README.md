@@ -46,3 +46,21 @@ python EECE.5811_HW0PT1.py
 Stack (EECE.5811_HW0PT2.py)
 Run the script:
 python EECE.5811_HW0PT2.py
+
+Design & Key Concepts
+Producer–Consumer
+
+Uses two multiprocessing.Queue objects for data transfer and acknowledgment.
+The Producer blocks until it receives an ACK for each number, ensuring the correct interleaving.
+Demonstrates process creation, termination, and simple IPC with Python.
+
+Stack (Fixed-Size Array)
+The Stack class internally uses a list of size 100 ([None] * 100) and a top index.
+The push method increments top and stores the new value, if there’s space.
+The pop method returns the top value and decrements top, if the stack is not empty.
+IndexError is raised on overflow or underflow, preventing invalid operations.
+
+Dependencies / Libraries
+Python 3.x
+The multiprocessing module (part of the standard Python library) for the Producer–Consumer example.
+No additional external libraries are required.
