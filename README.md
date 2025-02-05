@@ -16,3 +16,6 @@ This repository contains solutions for HW0, which involves two parts:
    ```bash
    git clone https://github.com/Lshaban313/EECE.5811_HWO.git
    cd EECE.5811_HWO
+
+2. Run the Producer–Consumer Program
+  python EECE.5811_HW0PT1.py
