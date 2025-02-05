@@ -25,3 +25,20 @@ This repository contains solutions for HW0, which involves two parts:
 4. Run the Stack Program
 ```bash```
 python EECE.5811_HW0PT2.py
+
+## Design of the Programs
+ ```bash```
+ Producer–Consumer (EECE.5811_HW0PT1.py)
+ Producer:
+Generates numbers 1 through 5.
+Prints “Producer: X”.
+Sends each number to the Consumer via a queue.
+Waits for an “ACK” after each send.
+Consumer:
+Receives each number from the Producer.
+Prints “Consumer: X”.
+Sends an “ACK” back to the Producer.
+main():
+Creates two queues (q_data and q_ack) for communication.
+Spawns Producer and Consumer processes with multiprocessing.Process.
+Waits for both to complete using .join().
