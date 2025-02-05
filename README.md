@@ -8,12 +8,12 @@
 This repository contains solutions for HW0, which involves two parts:
 1. Producer–Consumer using Python’s `multiprocessing`.
 2. A simple Stack data structure with push/pop.
-
+```
 ## File Descriptions
 ```
 - **EECE.5811_HW0PT1.py**: Implements the Producer–Consumer pattern.
 - **EECE.5811_HW0PT2.py**: Implements a 100-element Stack with push and pop, plus a demo test.
-
+```
 ## How to Run
 ```
 1. **Clone** the repository:
