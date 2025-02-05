@@ -46,6 +46,7 @@ Waits for both to complete using .join().
 
 
 2. Stack (EECE.5811_HW0PT2.py)
+   
 Stack Class: Internally uses an array of size 100 ([None]*100) with a top index.
 push(value): Increments top and stores value. Raises IndexError if top >= 99.
 pop(): Returns the value at top and decrements top. Raises IndexError if top < 0.
