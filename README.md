@@ -17,17 +17,14 @@ This repository contains solutions for HW0, which involves two parts:
 ## How to Run
 ```
 1. **Clone** the repository:
-   ```bash```
    git clone https://github.com/Lshaban313/EECE.5811_HWO.git
    cd EECE.5811_HWO
 
 2. Run the Producer–Consumer Program
- ```bash```
   python EECE.5811_HW0PT1.py
 
 
 4. Run the Stack Program
-```bash```
 python EECE.5811_HW0PT2.py
 ```
 ## Design of the Programs
