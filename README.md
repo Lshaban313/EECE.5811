@@ -18,4 +18,10 @@ This repository contains solutions for HW0, which involves two parts:
    cd EECE.5811_HWO
 
 2. Run the Producer–Consumer Program
+    ```bash
   python EECE.5811_HW0PT1.py
+
+
+3. Run the Stack Program
+  ```bash
+python EECE.5811_HW0PT2.py
