@@ -53,3 +53,11 @@ pop(): Returns the value at top and decrements top. Raises IndexError if top < 0
 stack_test():
 Demonstrates pushing integers (e.g. 10, 20, 30) onto the stack.
 Pops some values, printing each pop in a vertical format.
+
+
+
+## Dependencies / Libraries
+Python 3.x (required)
+multiprocessing (comes with the standard Python library; no extra install needed)
+No additional external libraries are used beyond the standard Python library.
+
