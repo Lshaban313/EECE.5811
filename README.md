@@ -27,7 +27,7 @@ This repository contains solutions for HW0, which involves two parts:
 python EECE.5811_HW0PT2.py
 
 ## Design of the Programs
-
+```
 1. Producer–Consumer (EECE.5811_HW0PT1.py)
 
 Producer:Generates numbers 1 through 5.
@@ -46,7 +46,7 @@ Waits for both to complete using .join().
 
 
 2. Stack (EECE.5811_HW0PT2.py)
-```
+
 Stack Class: Internally uses an array of size 100 ([None]*100) with a top index.
 push(value): Increments top and stores value. Raises IndexError if top >= 99.
 pop(): Returns the value at top and decrements top. Raises IndexError if top < 0.
@@ -57,7 +57,7 @@ Pops some values, printing each pop in a vertical format.
 
 ```
 ## Dependencies / Libraries
-
+```
 1. Python 3.x (required)
 2. multiprocessing (comes with the standard Python library; no extra install needed)
 3. No additional external libraries are used beyond the standard Python library.
