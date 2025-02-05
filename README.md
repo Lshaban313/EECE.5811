@@ -24,7 +24,7 @@ This repository contains solutions for HW0, which involves two parts:
   python EECE.5811_HW0PT1.py
 
 
-4. Run the Stack Program
+3. Run the Stack Program
 python EECE.5811_HW0PT2.py
 ```
 ## Design of the Programs
