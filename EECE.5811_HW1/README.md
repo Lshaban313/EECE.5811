@@ -44,3 +44,46 @@ python process_producer_consumer.py
 
 ```
 python thread_producer_consumer.py
+```
+## Design of the Programs
+
+1.Multiprocessing (process_producer_consumer.py)
+Producer
+```
+Generates a range of integers (e.g., for i in range(count): …)
+Sends each integer via a pipe
+Sends None when done
+```
+
+Consumer
+```
+Receives each integer from the pipe
+Stops upon encountering None
+main()
+
+Creates a pipe (parent_conn, child_conn = multiprocessing.Pipe())
+Spawns producer/consumer processes with multiprocessing.Process
+Joins both processes and calculates total runtime
+```
+Threading (thread_producer_consumer.py)
+Producer
+```
+Generates integers and places them onto a queue
+Sends None at the end
+```
+Consumer
+```
+Continuously removes integers from the queue
+Stops on None
+main()
+
+Creates a queue.Queue()
+Spawns producer/consumer threads using threading.Thread
+Joins threads and prints timing results
+```
+## Dependencies
+```
+Python 3.x
+multiprocessing, threading, queue – all come standard with Python
+No external libraries required
+
