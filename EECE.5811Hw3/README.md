@@ -37,7 +37,7 @@ Both are found in a single file called **`queue.go`**, which also includes a sim
 
 ```
 ## Design of the Program
-
+```
 1. **Baseline Queue (Coarse‐Grained Locking)**
    - **Data**: 
      - A single `sync.Mutex`.
@@ -70,7 +70,7 @@ Both are found in a single file called **`queue.go`**, which also includes a sim
    - Each goroutine performs a series of enqueues, then dequeues.
    - Measures total time for each queue implementation.
    - Prints performance results under different concurrency levels and workloads.
-  
+  ```
    ## Dependencies
 
    ```
