@@ -1,6 +1,6 @@
 # EECE.5811: HW3
 
-> **Group Members**: Layann Shaban  
+> **Group Members**: Vina Dang, Layann Shaban  
 > **Due Date**: February 26, 2025  
 
 ## Overview
