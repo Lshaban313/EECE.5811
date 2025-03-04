@@ -9,62 +9,7 @@ import (
     "unsafe"
 )
 
-/*
-Problem 2: Comparing Concurrent Queue Algorithms
 
-Requirements:
-1. Implement "Figure 29.9: Michael and Scott Concurrent Queue" (a lock-free queue).
-2. Also implement a lock-based queue.
-3. Design a benchmarking approach to measure efficiency under different workloads:
-   - Vary # of producers (P) and consumers (C).
-   - Vary # of operations per thread (Ops).
-   - Possibly try different enqueue/dequeue ratios (we'll do a 1:1 ratio here).
-
-4. Explain why these workloads effectively measure performance differences and 
-   how the results align with known findings (e.g., from Michael & Scott or 
-   from the textbook references).
-
-5. Provide instructions, analysis, and discussion.
-
---------------------------------------------------------------
-BUILD & RUN INSTRUCTIONS (Go):
-1. Save this file as 'main.go'.
-2. Build:  go build main.go
-3. Run:    ./main
-
-The program will:
-- Implement both queues.
-- Run multiple benchmark scenarios with different concurrency levels.
-- Print out timing results.
-
---------------------------------------------------------------
-HIGH-LEVEL ANALYSIS (to include in your write-up or README):
-
-1. When concurrency is low (e.g., 1 producer, 1 consumer), both the lock-based 
-   and lock-free queues may exhibit similar performance. Sometimes the 
-   lock-based version is *faster* at low concurrency due to less atomic CAS overhead.
-
-2. As concurrency grows (e.g., multiple producers, multiple consumers), the 
-   lock-based queue will often see more contention on its single mutex. The 
-   lock-free queue may scale better because threads can progress without 
-   blocking each other—however, the atomic operations introduce their own overhead.
-
-3. If your measurements align with typical results: 
-   - Lock-free queues can outperform locked queues at higher concurrency.
-   - Lock-based queues can be simpler and perform well at low concurrency.
-
-4. In practice, real systems also must address the ABA problem. This sample 
-   omits that complexity (per assignment statement), but be aware that 
-   production lock-free queues need safe memory reclamation.
-
---------------------------------------------------------------
-REFERENCES:
-[1] Michael, M. M., & Scott, M. L. (1996). 
-    "Simple, Fast, and Practical Non‐Blocking and Blocking Concurrent Queue Algorithms."
-[2] Herlihy, M. & Shavit, N. (2012). 
-    "The Art of Multiprocessor Programming, Revised Reprint." Morgan Kaufmann.
-[3] Intel® 64 and IA‐32 Architectures Software Developer’s Manual.
-*/
 
 /******************************************************************************
  *                           LOCK-BASED QUEUE                                 *
