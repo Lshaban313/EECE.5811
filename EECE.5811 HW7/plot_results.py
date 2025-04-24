@@ -23,8 +23,7 @@ if 'write_ns_per_block' in df.columns:
     title_w = 'RAID Write Time per Block'
     title_r = 'RAID Read Time per Block'
 else:
-    # New seconds or throughput‐based CSV
-    # you may have headers like 'WriteTime(s)' or 'WriteThroughput(MB/s)'
+
     if 'WriteThroughput(MB/s)' in df.columns:
         x = df['RAIDLevel']
         yw = df['WriteThroughput(MB/s)']
