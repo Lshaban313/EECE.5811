@@ -22,7 +22,7 @@ func (r *RAID4) Write(n int64, data []byte) error {
 		return err
 	}
 
-	// recompute parity
+	// recalculate parity
 	parity := make([]byte, r.disks[0].BlockSize)
 	copy(parity, data)
 	for i := int64(0); i < dataDisks; i++ {
